@@ -110,8 +110,6 @@ func run(part2 bool, input string) any {
 		d1, _ = getDir(d1, maze[cur1.i][cur1.j])
 		if anchor == (Cell{-1, -1}) {
 			if d1.i == 0 && cur1.i == 0 {
-				fmt.Print("sanity")
-
 				if maze[cur1.i][cur1.j] == '-' || maze[cur1.i][cur1.j] == '7' || maze[cur1.i][cur1.j] == 'F' {
 					anchor = cur1
 					if d1.j == 1 {
@@ -120,11 +118,9 @@ func run(part2 bool, input string) any {
 					if d1.j == -1 {
 						inward = "L"
 					}
-					fmt.Print(distance)
 				}
 			}
 			if d1.j == 0 && cur1.j == 0 {
-				fmt.Print("sanity")
 				if maze[cur1.i][cur1.j] == '|' || maze[cur1.i][cur1.j] == 'L' || maze[cur1.i][cur1.j] == 'F' {
 					anchor = cur1
 					if d1.i == 1 {
@@ -133,7 +129,6 @@ func run(part2 bool, input string) any {
 					if d1.i == -1 {
 						inward = "R"
 					}
-					fmt.Print(distance)
 				}
 			}
 		}
