@@ -84,9 +84,9 @@ func run(part2 bool, input string) any {
 	p := Pos{P{0, 0}, Right, 0}
 	front = append(front, p)
 	dirs[p] = 0
-	/*p = Pos{P{0, 0}, Down, 0}
+	p = Pos{P{0, 0}, Down, 0}
 	front = append(front, p)
-	dirs[p] = 0*/
+	dirs[p] = 0
 
 	get_dist := func(cur Pos) int {
 		min_dist := FAR
