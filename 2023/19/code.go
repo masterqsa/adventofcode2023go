@@ -221,7 +221,7 @@ func run(part2 bool, input string) any {
 	}
 
 	if part2 {
-		cube := FourDCube{dims: []Interval{Interval{1, 4000}, Interval{1, 4000}, Interval{1, 4000}, Interval{1, 4000}}}
+		cube := FourDCube{dims: []Interval{{1, 4000}, {1, 4000}, {1, 4000}, {1, 4000}}}
 		return cube.ApplyRuleCube(rules["in"])
 	}
 
